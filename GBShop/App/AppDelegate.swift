@@ -10,10 +10,54 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    let requestFactory = RequestFactory()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let auth = requestFactory.makeAuthRequestFactory()
+        auth.login(userName: "Somebody", password: "mypassword") { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            auth.logout(userID: "123") { response in
+                switch response.result {
+                case .success(let logout):
+                    print("logout \(logout)")
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            auth.registry(userID: "123", userName: "123", password: "123", email: "123") { response in
+                switch response.result {
+                case .success(let logout):
+                    print("registry \(logout)")
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            auth.changeUserData(userID: "123", userName: "123", password: "123", email: "123") { response in
+                switch response.result {
+                case .success(let logout):
+                    print("changeUserData \(logout)")
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        
         return true
     }
 
