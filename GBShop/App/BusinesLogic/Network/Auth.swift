@@ -98,7 +98,7 @@ extension Auth: AuthRequestFactory {
         struct ChangeUserData: RequestRouter {
             let baseURL: URL
             let method: HTTPMethod = .get
-            let path: String = "registerUser.json"
+            let path: String = "changeUserData.json"
             let userID: String
             let login: String
             let password: String
