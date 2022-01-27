@@ -36,7 +36,7 @@ class AuthTests: XCTestCase {
         auth.logout(userID: "123") { response in
             switch response.result {
             case .success(let login):
-                XCTAssert(login.result == 1)
+                XCTAssertEqual(login.result, 1)
             case .failure(let error):
                 print(error)
                 XCTFail()
