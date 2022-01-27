@@ -59,16 +59,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //        }
         
         
-        let productRequestFactory = self.requestFactory.makeProductListRequestFactory()
-        productRequestFactory.getProductList(page: 1, category: 1) { response in
+        //        let productRequestFactory = self.requestFactory.makeProductListRequestFactory()
+        //        productRequestFactory.getProductList(page: 1, category: 1) { response in
+        //            switch response.result {
+        //            case .success(let result):
+        //                print("result \(result)")
+        //            case .failure(let error):
+        //                print(error.localizedDescription)
+        //            }
+        //        }
+        
+        
+        let reviewRequestFactory = self.requestFactory.makeReviewRequestFactory()
+        reviewRequestFactory.addReview(userId: 123, textReview: "test") { response in
             switch response.result {
             case .success(let result):
-                print("result \(result)")
+                print("add \(result)")
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
         
+        reviewRequestFactory.approveReview(idComment: 123) { response in
+            switch response.result {
+            case .success(let result):
+                print("approve \(result)")
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        reviewRequestFactory.deleteReview(idComment: 123){ response in
+            switch response.result {
+            case .success(let result):
+                print("delete \(result)")
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
         
         
         return true
