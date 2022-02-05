@@ -98,6 +98,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
+        let basketRequestFactory = self.requestFactory.makeBasketRequestFactory()
+        
+        for item in 1...10 {
+            let idProduct = item
+            let quantity = item + 10
+            basketRequestFactory.addToBasket(idProduct: idProduct, quantity: quantity) { response in
+                switch response.result {
+                case .success(let result):
+                    print("add to basket product \(idProduct) quantity \(quantity) result \(result)")
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        
+        basketRequestFactory.payBasket()
+        
         
         return true
     }
