@@ -36,6 +36,8 @@
 		B652719B27A29551004D17E5 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652719A27A29551004D17E5 /* ReviewRequestFactory.swift */; };
 		B652719D27A29620004D17E5 /* ResultUserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652719C27A29620004D17E5 /* ResultUserMessage.swift */; };
 		B652719F27A2971F004D17E5 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652719E27A2971F004D17E5 /* Review.swift */; };
+		B65271A227AE9FE6004D17E5 /* BasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271A127AE9FE6004D17E5 /* BasketRequestFactory.swift */; };
+		B65271A427AEA095004D17E5 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271A327AEA095004D17E5 /* Basket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		B652719A27A29551004D17E5 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
 		B652719C27A29620004D17E5 /* ResultUserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultUserMessage.swift; sourceTree = "<group>"; };
 		B652719E27A2971F004D17E5 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		B65271A127AE9FE6004D17E5 /* BasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRequestFactory.swift; sourceTree = "<group>"; };
+		B65271A327AEA095004D17E5 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		B7145424A80C834A36B2318B /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96258F9B441A84490DC9D3D /* Pods-GBShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.debug.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.debug.xcconfig"; sourceTree = "<group>"; };
 		F5B23CEDC8C2915C6994A142 /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
@@ -225,8 +229,9 @@
 		B61C79DB27992DB8002C2E29 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B652719927A2952B004D17E5 /* Review */,
 				B61C79E027992DEF002C2E29 /* RequestFactory.swift */,
+				B65271A027AE9FC7004D17E5 /* Basket */,
+				B652719927A2952B004D17E5 /* Review */,
 				B61E7089279E9BD700510D82 /* Product */,
 				B61E7088279E9BB400510D82 /* Auth */,
 			);
@@ -311,6 +316,15 @@
 				B652719E27A2971F004D17E5 /* Review.swift */,
 			);
 			path = Review;
+			sourceTree = "<group>";
+		};
+		B65271A027AE9FC7004D17E5 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				B65271A127AE9FE6004D17E5 /* BasketRequestFactory.swift */,
+				B65271A327AEA095004D17E5 /* Basket.swift */,
+			);
+			path = Basket;
 			sourceTree = "<group>";
 		};
 		C05BF468811E223A82F01144 /* Pods */ = {
@@ -573,9 +587,11 @@
 				B61C79D627992D38002C2E29 /* RequestRouter.swift in Sources */,
 				B61C79E32799333B002C2E29 /* DataRequest.swift in Sources */,
 				B638C630275E6CA1000E19CA /* AppDelegate.swift in Sources */,
+				B65271A227AE9FE6004D17E5 /* BasketRequestFactory.swift in Sources */,
 				B61E7087279E894900510D82 /* Product.swift in Sources */,
 				B61C79D827992D95002C2E29 /* LoginResult.swift in Sources */,
 				B61C79DF27992DDC002C2E29 /* Auth.swift in Sources */,
+				B65271A427AEA095004D17E5 /* Basket.swift in Sources */,
 				B652719D27A29620004D17E5 /* ResultUserMessage.swift in Sources */,
 				B61E708B279E9BF300510D82 /* ProductRequestFctory.swift in Sources */,
 				B61C79DA27992DA7002C2E29 /* User.swift in Sources */,
