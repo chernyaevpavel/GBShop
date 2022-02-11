@@ -43,7 +43,6 @@ extension Review: ReviewRequestFactory {
 }
 
 extension Review {
-    
     struct AddReview: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get

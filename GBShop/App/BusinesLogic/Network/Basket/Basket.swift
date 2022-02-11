@@ -48,7 +48,6 @@ extension Basket: BasketRequestFactory {
 }
 
 extension Basket {
-    
     struct AddToBasket: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get

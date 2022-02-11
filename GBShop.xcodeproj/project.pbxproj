@@ -38,6 +38,16 @@
 		B652719F27A2971F004D17E5 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652719E27A2971F004D17E5 /* Review.swift */; };
 		B65271A227AE9FE6004D17E5 /* BasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271A127AE9FE6004D17E5 /* BasketRequestFactory.swift */; };
 		B65271A427AEA095004D17E5 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271A327AEA095004D17E5 /* Basket.swift */; };
+		B65271A627B16871004D17E5 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271A527B16871004D17E5 /* AuthViewController.swift */; };
+		B65271A827B1B1FF004D17E5 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271A727B1B1FF004D17E5 /* NetworkModel.swift */; };
+		B65271AA27B1B9F6004D17E5 /* AuthBussinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271A927B1B9F6004D17E5 /* AuthBussinesModel.swift */; };
+		B65271AC27B1BD66004D17E5 /* AuthFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271AB27B1BD66004D17E5 /* AuthFunction.swift */; };
+		B65271AE27B1BEBB004D17E5 /* BasketFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271AD27B1BEBB004D17E5 /* BasketFunction.swift */; };
+		B65271B027B1BEF5004D17E5 /* ReviewFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271AF27B1BEF5004D17E5 /* ReviewFunction.swift */; };
+		B65271B227B1BF1C004D17E5 /* ProductFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271B127B1BF1C004D17E5 /* ProductFunction.swift */; };
+		B65271B427B65C9C004D17E5 /* ProductBussinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271B327B65C9C004D17E5 /* ProductBussinesModel.swift */; };
+		B65271B627B65D97004D17E5 /* ReviewBussinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271B527B65D97004D17E5 /* ReviewBussinesModel.swift */; };
+		B65271B827B65E77004D17E5 /* BasketBussinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271B727B65E77004D17E5 /* BasketBussinesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +108,16 @@
 		B652719E27A2971F004D17E5 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		B65271A127AE9FE6004D17E5 /* BasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRequestFactory.swift; sourceTree = "<group>"; };
 		B65271A327AEA095004D17E5 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		B65271A527B16871004D17E5 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		B65271A727B1B1FF004D17E5 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		B65271A927B1B9F6004D17E5 /* AuthBussinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBussinesModel.swift; sourceTree = "<group>"; };
+		B65271AB27B1BD66004D17E5 /* AuthFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFunction.swift; sourceTree = "<group>"; };
+		B65271AD27B1BEBB004D17E5 /* BasketFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketFunction.swift; sourceTree = "<group>"; };
+		B65271AF27B1BEF5004D17E5 /* ReviewFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFunction.swift; sourceTree = "<group>"; };
+		B65271B127B1BF1C004D17E5 /* ProductFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFunction.swift; sourceTree = "<group>"; };
+		B65271B327B65C9C004D17E5 /* ProductBussinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBussinesModel.swift; sourceTree = "<group>"; };
+		B65271B527B65D97004D17E5 /* ReviewBussinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBussinesModel.swift; sourceTree = "<group>"; };
+		B65271B727B65E77004D17E5 /* BasketBussinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketBussinesModel.swift; sourceTree = "<group>"; };
 		B7145424A80C834A36B2318B /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96258F9B441A84490DC9D3D /* Pods-GBShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.debug.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.debug.xcconfig"; sourceTree = "<group>"; };
 		F5B23CEDC8C2915C6994A142 /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				B638C62F275E6CA1000E19CA /* AppDelegate.swift */,
+				B638C631275E6CA1000E19CA /* SceneDelegate.swift */,
 				B61C79C527845257002C2E29 /* BusinesLogic */,
 				B61C79C627845280002C2E29 /* Entity */,
 				B61C79C727845290002C2E29 /* Assembly */,
@@ -184,6 +205,7 @@
 		B61C79C8278452A2002C2E29 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				B65271A527B16871004D17E5 /* AuthViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -222,6 +244,7 @@
 				B61C79D327992D25002C2E29 /* AbstactRequestFactory.swift */,
 				B61C79D527992D38002C2E29 /* RequestRouter.swift */,
 				B61C79E22799333B002C2E29 /* DataRequest.swift */,
+				B65271A727B1B1FF004D17E5 /* NetworkModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -243,6 +266,8 @@
 			children = (
 				B61C79DC27992DD0002C2E29 /* AuthRequestFactory.swift */,
 				B61C79DE27992DDC002C2E29 /* Auth.swift */,
+				B65271A927B1B9F6004D17E5 /* AuthBussinesModel.swift */,
+				B65271AB27B1BD66004D17E5 /* AuthFunction.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -252,6 +277,8 @@
 			children = (
 				B61E708A279E9BF200510D82 /* ProductRequestFctory.swift */,
 				B61E708C279E9D9200510D82 /* ProductList.swift */,
+				B65271B127B1BF1C004D17E5 /* ProductFunction.swift */,
+				B65271B327B65C9C004D17E5 /* ProductBussinesModel.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -285,7 +312,6 @@
 				B61C79CA27845325002C2E29 /* Resources */,
 				B61C79C92784531F002C2E29 /* Core */,
 				B61C79C427845250002C2E29 /* App */,
-				B638C631275E6CA1000E19CA /* SceneDelegate.swift */,
 			);
 			path = GBShop;
 			sourceTree = "<group>";
@@ -314,6 +340,8 @@
 			children = (
 				B652719A27A29551004D17E5 /* ReviewRequestFactory.swift */,
 				B652719E27A2971F004D17E5 /* Review.swift */,
+				B65271AF27B1BEF5004D17E5 /* ReviewFunction.swift */,
+				B65271B527B65D97004D17E5 /* ReviewBussinesModel.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -323,6 +351,8 @@
 			children = (
 				B65271A127AE9FE6004D17E5 /* BasketRequestFactory.swift */,
 				B65271A327AEA095004D17E5 /* Basket.swift */,
+				B65271AD27B1BEBB004D17E5 /* BasketFunction.swift */,
+				B65271B727B65E77004D17E5 /* BasketBussinesModel.swift */,
 			);
 			path = Basket;
 			sourceTree = "<group>";
@@ -580,25 +610,35 @@
 				B61C79E127992DEF002C2E29 /* RequestFactory.swift in Sources */,
 				B61C79CE27992CE6002C2E29 /* AbstractErrorParser.swift in Sources */,
 				B61E707F279968EC00510D82 /* ResponseResult.swift in Sources */,
+				B65271B627B65D97004D17E5 /* ReviewBussinesModel.swift in Sources */,
 				B61E708D279E9D9200510D82 /* ProductList.swift in Sources */,
+				B65271B027B1BEF5004D17E5 /* ReviewFunction.swift in Sources */,
 				B61E708127996B4100510D82 /* Genger.swift in Sources */,
 				B61C79D227992D15002C2E29 /* ResponseCodable.swift in Sources */,
 				B61C79DD27992DD0002C2E29 /* AuthRequestFactory.swift in Sources */,
 				B61C79D627992D38002C2E29 /* RequestRouter.swift in Sources */,
 				B61C79E32799333B002C2E29 /* DataRequest.swift in Sources */,
 				B638C630275E6CA1000E19CA /* AppDelegate.swift in Sources */,
+				B65271B827B65E77004D17E5 /* BasketBussinesModel.swift in Sources */,
 				B65271A227AE9FE6004D17E5 /* BasketRequestFactory.swift in Sources */,
+				B65271AE27B1BEBB004D17E5 /* BasketFunction.swift in Sources */,
 				B61E7087279E894900510D82 /* Product.swift in Sources */,
 				B61C79D827992D95002C2E29 /* LoginResult.swift in Sources */,
 				B61C79DF27992DDC002C2E29 /* Auth.swift in Sources */,
 				B65271A427AEA095004D17E5 /* Basket.swift in Sources */,
 				B652719D27A29620004D17E5 /* ResultUserMessage.swift in Sources */,
+				B65271B427B65C9C004D17E5 /* ProductBussinesModel.swift in Sources */,
 				B61E708B279E9BF300510D82 /* ProductRequestFctory.swift in Sources */,
+				B65271AA27B1B9F6004D17E5 /* AuthBussinesModel.swift in Sources */,
+				B65271A627B16871004D17E5 /* AuthViewController.swift in Sources */,
 				B61C79DA27992DA7002C2E29 /* User.swift in Sources */,
 				B638C632275E6CA1000E19CA /* SceneDelegate.swift in Sources */,
 				B652719B27A29551004D17E5 /* ReviewRequestFactory.swift in Sources */,
+				B65271AC27B1BD66004D17E5 /* AuthFunction.swift in Sources */,
+				B65271B227B1BF1C004D17E5 /* ProductFunction.swift in Sources */,
 				B61C79D027992CF9002C2E29 /* ErrorParser.swift in Sources */,
 				B61C79D427992D25002C2E29 /* AbstactRequestFactory.swift in Sources */,
+				B65271A827B1B1FF004D17E5 /* NetworkModel.swift in Sources */,
 				B652719F27A2971F004D17E5 /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
