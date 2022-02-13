@@ -8,7 +8,6 @@
 import Foundation
 
 enum AuthFunction: String {
-    case login
     case logout
     case registry
     case changeUserData
