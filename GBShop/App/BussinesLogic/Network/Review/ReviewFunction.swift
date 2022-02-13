@@ -8,7 +8,10 @@
 import Foundation
 
 enum ReviewFunction: String {
-    case addReview
     case approveReview
     case deleteReview
+}
+
+enum AddReviewFunction: String {
+    case addReview
 }

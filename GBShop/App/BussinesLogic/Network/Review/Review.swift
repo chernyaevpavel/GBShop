@@ -25,12 +25,6 @@ class Review: AbstactRequestFactory {
 
 extension Review: ReviewRequestFactory {
     
-    func addReview(userId: Int, textReview: String, completion: @escaping (AFDataResponse<ResultUserMessage>) -> Void) {
-        let requestModel = AddReview(baseURL: baseURL, userId: userId, textReview: textReview)
-        self.request(request: requestModel, completionHandler: completion)
-        
-    }
-    
     func approveReview(idComment: Int, completion: @escaping (AFDataResponse<ResponseResult>) -> Void) {
         let requestModel = ApproveReview(baseURL: baseURL, idComment: idComment)
         self.request(request: requestModel, completionHandler: completion)
@@ -43,17 +37,7 @@ extension Review: ReviewRequestFactory {
 }
 
 extension Review {
-    struct AddReview: RequestRouter {
-        let baseURL: URL
-        let method: HTTPMethod = .get
-        let path: String = "addReview.json"
-        let userId: Int
-        let textReview: String
-        var parameters: Parameters? {
-            return ["id_user": userId, "text": textReview]
-        }
-    }
-    
+
     struct ApproveReview: RequestRouter {
         let baseURL: URL
         let method: HTTPMethod = .get

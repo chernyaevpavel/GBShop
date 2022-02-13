@@ -10,7 +10,7 @@ import UIKit
 class AuthViewController: UIViewController {
     var loginTextField: UITextField!
     var passwordTextField: UITextField!
-    let authBussinesModel = AuthBussinesModel()
+    let loginBussinesModel = LoginBussinesModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +75,17 @@ class AuthViewController: UIViewController {
     // MARK: - user action
     @objc
     func loginButtonClick() {
-        self.authBussinesModel.send(.login)
+        loginBussinesModel.send(.login) { response in
+            switch response.result {
+            case .success(let result):
+                DispatchQueue.main.async {
+                    let productListVC = ProductListViewController()
+                    self.present(productListVC, animated: true, completion: nil)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     // MARK: - setup views
