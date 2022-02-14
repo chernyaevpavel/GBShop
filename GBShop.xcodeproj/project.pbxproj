@@ -56,6 +56,9 @@
 		B65271C527B97B16004D17E5 /* AddReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271C427B97B15004D17E5 /* AddReviewRequestFactory.swift */; };
 		B65271C727B97C58004D17E5 /* AddReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271C627B97C58004D17E5 /* AddReview.swift */; };
 		B65271C927B97CF5004D17E5 /* AddReviewBussinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271C827B97CF5004D17E5 /* AddReviewBussinesModel.swift */; };
+		B65271CB27B980F1004D17E5 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271CA27B980F1004D17E5 /* ProductInfoViewController.swift */; };
+		B65271CD27BA3812004D17E5 /* ReviewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271CC27BA3812004D17E5 /* ReviewUser.swift */; };
+		B65271CF27BA389C004D17E5 /* ReviewUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65271CE27BA389C004D17E5 /* ReviewUserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +137,9 @@
 		B65271C427B97B15004D17E5 /* AddReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewRequestFactory.swift; sourceTree = "<group>"; };
 		B65271C627B97C58004D17E5 /* AddReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReview.swift; sourceTree = "<group>"; };
 		B65271C827B97CF5004D17E5 /* AddReviewBussinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewBussinesModel.swift; sourceTree = "<group>"; };
+		B65271CA27B980F1004D17E5 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
+		B65271CC27BA3812004D17E5 /* ReviewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewUser.swift; sourceTree = "<group>"; };
+		B65271CE27BA389C004D17E5 /* ReviewUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewUserTableViewCell.swift; sourceTree = "<group>"; };
 		B7145424A80C834A36B2318B /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96258F9B441A84490DC9D3D /* Pods-GBShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.debug.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.debug.xcconfig"; sourceTree = "<group>"; };
 		F5B23CEDC8C2915C6994A142 /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +213,7 @@
 				B61E708027996B4100510D82 /* Genger.swift */,
 				B61E7086279E894900510D82 /* Product.swift */,
 				B652719C27A29620004D17E5 /* ResultUserMessage.swift */,
+				B65271CC27BA3812004D17E5 /* ReviewUser.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -223,6 +230,8 @@
 			children = (
 				B65271A527B16871004D17E5 /* AuthViewController.swift */,
 				B65271B927B7BC43004D17E5 /* ProductListViewController.swift */,
+				B65271CA27B980F1004D17E5 /* ProductInfoViewController.swift */,
+				B65271CE27BA389C004D17E5 /* ReviewUserTableViewCell.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -651,9 +660,11 @@
 				B61C79DD27992DD0002C2E29 /* AuthRequestFactory.swift in Sources */,
 				B61C79D627992D38002C2E29 /* RequestRouter.swift in Sources */,
 				B61C79E32799333B002C2E29 /* DataRequest.swift in Sources */,
+				B65271CB27B980F1004D17E5 /* ProductInfoViewController.swift in Sources */,
 				B638C630275E6CA1000E19CA /* AppDelegate.swift in Sources */,
 				B65271C527B97B16004D17E5 /* AddReviewRequestFactory.swift in Sources */,
 				B65271B827B65E77004D17E5 /* BasketBussinesModel.swift in Sources */,
+				B65271CF27BA389C004D17E5 /* ReviewUserTableViewCell.swift in Sources */,
 				B65271C027B90B21004D17E5 /* LoginFunction.swift in Sources */,
 				B65271A227AE9FE6004D17E5 /* BasketRequestFactory.swift in Sources */,
 				B65271AE27B1BEBB004D17E5 /* BasketFunction.swift in Sources */,
@@ -677,6 +688,7 @@
 				B65271B227B1BF1C004D17E5 /* ProductFunction.swift in Sources */,
 				B65271C227B90B65004D17E5 /* LoginBussinesModel.swift in Sources */,
 				B61C79D027992CF9002C2E29 /* ErrorParser.swift in Sources */,
+				B65271CD27BA3812004D17E5 /* ReviewUser.swift in Sources */,
 				B61C79D427992D25002C2E29 /* AbstactRequestFactory.swift in Sources */,
 				B65271A827B1B1FF004D17E5 /* NetworkModel.swift in Sources */,
 				B652719F27A2971F004D17E5 /* Review.swift in Sources */,
