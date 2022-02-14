@@ -51,7 +51,6 @@ class ProductListViewController: UIViewController {
     }
 }
 
-
 extension ProductListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -60,11 +59,17 @@ extension ProductListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let product = self.produstList[indexPath.row]
-        let cell = UITableViewCell()
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
         cell.textLabel?.text = product.name
         cell.detailTextLabel?.text = String(product.price)
         cell.tag = product.id
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let product = self.produstList[indexPath.row]
+        let productInfoVC = ProductInfoViewController(product: product)
+        present(productInfoVC, animated: true, completion: nil)
     }
     
     
