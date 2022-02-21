@@ -11,5 +11,5 @@ import Alamofire
 protocol BasketRequestFactory {
     func addToBasket(idProduct: Int, quantity: Int, completion: @escaping (AFDataResponse<ResponseResult>) -> Void)
     func deleteFromBasket(idProduct: Int, completion: @escaping (AFDataResponse<ResponseResult>) -> Void)
-    func payBasket()
+    func payBasket(completion: @escaping (AFDataResponse<ResponseResult>) -> Void)
 }

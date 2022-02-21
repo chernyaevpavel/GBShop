@@ -15,7 +15,7 @@ class AuthTests: XCTestCase {
     let requestFactory = RequestFactory()
 
     func testLogin() {
-        let auth = self.requestFactory.makeAuthRequestFactory()
+        let auth = self.requestFactory.makeLoginRequestFactory()
         auth.login(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
             case .success(let login):
