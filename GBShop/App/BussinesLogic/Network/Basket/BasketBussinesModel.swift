@@ -24,7 +24,7 @@ class BasketBussinesModel: NetworkModel {
             let idProduct = 123
             basketRequestFactory.deleteFromBasket(idProduct: idProduct, completion: completion)
         case .payBasket:
-            basketRequestFactory.payBasket()
+            basketRequestFactory.payBasket(completion: completion)
         }
     }
 }

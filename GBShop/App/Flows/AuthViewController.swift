@@ -112,6 +112,7 @@ class AuthViewController: UIViewController {
         loginTextField.borderStyle = .line
         loginTextField.font = .systemFont(ofSize: 25)
         loginTextField.autocapitalizationType = .none
+        loginTextField.placeholder = "login"
         return loginTextField
     }
     
@@ -124,12 +125,13 @@ class AuthViewController: UIViewController {
     }
     
     private func setupPasswordTexField() -> UITextField {
-        let loginTextField = UITextField()
-        loginTextField.translatesAutoresizingMaskIntoConstraints = false
-        loginTextField.borderStyle = .line
-        loginTextField.font = .systemFont(ofSize: 25)
-        loginTextField.isSecureTextEntry = true
-        return loginTextField
+        let passwordTextField = UITextField()
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.borderStyle = .line
+        passwordTextField.font = .systemFont(ofSize: 25)
+        passwordTextField.isSecureTextEntry = true
+        passwordTextField.placeholder = "password"
+        return passwordTextField
     }
     
     private func setupLoginButton() -> UIButton {
