@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class AuthViewController: UIViewController {
     var loginTextField: UITextField!
@@ -75,14 +76,26 @@ class AuthViewController: UIViewController {
     // MARK: - user action
     @objc
     func loginButtonClick() {
+        
+        //test crash into Crashlytics dashboard
+//        let a = loginTextField.text!
+//        let b = passwordTextField.text! // b = 0
+//        let c = Int(a)! / Int(b)!
+        
         loginBussinesModel.send(.login) { response in
             switch response.result {
             case .success(let result):
+                Analytics.logEvent(AnalyticsEventLogin, parameters: [
+                  "result" : "success"
+                  ])
                 DispatchQueue.main.async {
                     let productListVC = ProductListViewController()
                     self.present(productListVC, animated: true, completion: nil)
                 }
             case .failure(let error):
+                Analytics.logEvent(AnalyticsEventLogin, parameters: [
+                  "result" : "failure"
+                  ])
                 print(error.localizedDescription)
             }
         }
