@@ -25,8 +25,6 @@ extension UserDefaults {
         }
         return basketList
     }
-
-    
 }
 
 
