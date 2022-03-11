@@ -43,74 +43,73 @@ extension Auth: AuthRequestFactory {
                                     email: email)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
-
+    
     func changeUserData(userID: String, userName: String, password: String, email: String, completionHandler: @escaping (AFDataResponse<ResponseResult>) -> Void) {
         let requestModel = ChangeUserData(baseURL: baseURL,
-                                    userID: userID,
-                                    login: userName,
-                                    password: password,
-                                    email: email)
+                                          userID: userID,
+                                          login: userName,
+                                          password: password,
+                                          email: email)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
-
-}
     
-    extension Auth {
-        struct Login: RequestRouter {
-            let baseURL: URL
-            let method: HTTPMethod = .get
-            let path: String = "login.json"
-            let login: String
-            let password: String
-            var parameters: Parameters? {
-                return ["username": login, "password": password]
-            }
+}
+
+extension Auth {
+    struct Login: RequestRouter {
+        let baseURL: URL
+        let method: HTTPMethod = .get
+        let path: String = "login.json"
+        let login: String
+        let password: String
+        var parameters: Parameters? {
+            return ["username": login, "password": password]
         }
-        
-        struct Logout: RequestRouter {
-            let baseURL: URL
-            let method: HTTPMethod = .get
-            let path: String = "logout.json"
-            let userID: String
-            var parameters: Parameters? {
-                return ["id_user": userID]
-            }
-        }
-        
-        struct Registry: RequestRouter {
-            let baseURL: URL
-            let method: HTTPMethod = .get
-            let path: String = "registerUser.json"
-            let userID: String
-            let login: String
-            let password: String
-            let email: String
-            
-            var parameters: Parameters? {
-                return ["id_user": userID,
-                        "username": login,
-                        "password": password,
-                        "email": email
-                ]
-            }
-        }
-        
-        struct ChangeUserData: RequestRouter {
-            let baseURL: URL
-            let method: HTTPMethod = .get
-            let path: String = "changeUserData.json"
-            let userID: String
-            let login: String
-            let password: String
-            let email: String
-            
-            var parameters: Parameters? {
-                return ["id_user": userID,
-                        "username": login,
-                        "password": password,
-                        "email": email
-                ]
-            }
-        }
-        
     }
+    
+    struct Logout: RequestRouter {
+        let baseURL: URL
+        let method: HTTPMethod = .get
+        let path: String = "logout.json"
+        let userID: String
+        var parameters: Parameters? {
+            return ["id_user": userID]
+        }
+    }
+    
+    struct Registry: RequestRouter {
+        let baseURL: URL
+        let method: HTTPMethod = .get
+        let path: String = "registerUser.json"
+        let userID: String
+        let login: String
+        let password: String
+        let email: String
+        
+        var parameters: Parameters? {
+            return ["id_user": userID,
+                    "username": login,
+                    "password": password,
+                    "email": email
+            ]
+        }
+    }
+    
+    struct ChangeUserData: RequestRouter {
+        let baseURL: URL
+        let method: HTTPMethod = .get
+        let path: String = "changeUserData.json"
+        let userID: String
+        let login: String
+        let password: String
+        let email: String
+        
+        var parameters: Parameters? {
+            return ["id_user": userID,
+                    "username": login,
+                    "password": password,
+                    "email": email
+            ]
+        }
+    }
+}
